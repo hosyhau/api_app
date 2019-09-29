@@ -14,10 +14,10 @@ class Product(models.Model):
 
     def to_json(self):
         return {
-            'id': self.id,
+            'id_1': self.id,
             'name': self.name,
             'desc': self.description,
             'price': self.price,
             'date_created': self.date_created,
-            'date_modified': self.date_modified
+            'date_modified': self.date_created
         }
